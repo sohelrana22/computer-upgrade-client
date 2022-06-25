@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+.header {
+  font-family: "Courgette", cursive;
+}
+.header-font {
+  @apply lg:text-3xl text-xl font-bold 
+  bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 uppercase;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 17px !important;
+  background: tomato;
+  padding: 8px;
+  border-radius: 5px;
+  color: white;
+}
+
+.button {
+  @apply bg-gradient-to-r from-blue-500 border-t-violet-500;
+}
